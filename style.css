@@ -9,13 +9,13 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14px;
     background-color: hsl(0, 0%, 98%) !important;
-    padding: 10px !important;
+    /* padding: 10px !important; */
 }
 
 nav {
+    width: 100%;
     font-family: inherit;
     background-color: #fff;
-    /* margin-left: 2rem; */
     padding: 1.75rem;
     box-shadow: 2px 0px 4px rgba(0, 0, 0, .5);
 }
@@ -26,27 +26,36 @@ nav {
 }
 
 .search-section,
-.container {
+.countries {
     margin-top: 2rem;
+}
+
+.cols {
+    border-radius: 4px;
+    padding: 0;
 }
 
 .card {
     width: 100%;
     height: 400px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    border: 0px solid;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .2);
 }
 
 .card img {
     width: 100%;
     height: 200px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 .row {
     justify-content: space-between;
 }
 
-.cols {
-    margin-bottom: 3rem;
+.row>div {
+    margin-bottom: calc(1.5rem * .5);
 }
 
 .card-body h3 {
@@ -65,4 +74,13 @@ nav {
     font-family: inherit;
     font-weight: 300;
     font-weight: normal;
+}
+
+
+/* Mobile display h1 */
+
+@media (max-width:320px) {
+    nav h2 {
+        font-size: 1.3rem;
+    }
 }
